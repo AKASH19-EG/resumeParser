@@ -1,0 +1,21 @@
+.resumeFile_upload,
+.card {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.dual-column {
+    display: flex;
+    padding-top: 5px;
+}
+
+.last_name {
+    padding-left: 2rem;
+}
+.card{
+    margin-top: 2rem !important;
+}
+label { display: inline-block; 
+    width: 108px; 
+    text-align: left; 
+}

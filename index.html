@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-5">
+                <div class="resumeFile_upload">
+                    <h1>Resume Parser</h1>
+                    <h4 for="resume">Upload Your Resume:</h4>
+                    <input type="file" id="resumeFile">
+                </div>
+                <button type="submit" onclick="submit()">Submit</button>
+            </div>
+
+            <div class="card col-7">
+                <div class="card-body">
+                    <div>
+                        <h1>Fatched Details</h1>
+                        <div>
+                            <div class="dual-column">
+                                <label for="fname">First name:</label>
+                                <input type="text" id="fname" name="fname">
+                                <label class="last_name" for="lname">Last name:</label>
+                                <input type="text" id="lname" name="lname">
+                            </div> <br>
+                            <label for="DOB">Date Of Birth:</label>
+                            <input type="text" id="DOB" name="DOB"><br><br>
+                            <label for="mobile">Mobile:</label>
+                            <input type="text" id="mobile" name="mobile"><br><br>
+                            <label for="email">Email:</label>
+                            <input type="text" id="email" name="email"><br><br>
+                            <label >LinkedIn:</label>
+                            <input type="text" id="linkedin" name="email"><br><br>
+                            <div class="dual-column">
+                                <label for="city">City:</label>
+                                <input type="text" id="city">
+                                <label class="state" for="lname">State:</label>
+                                <input type="text" id="state">
+                            </div> <br>
+                            <label  for="lname">postalCode:</label>
+                            <input type="text" id="postalCode">
+                            <label for="country">country:</label>
+                            <input type="text" id="country"> <br><br>
+
+                            <label for="Education">Institution:</label>
+                            <input type="text" id="education"> <br><br>
+
+                            
+                            
+                            <label for="Education-level">Qualification:</label>
+                            <input type="text" id="qualification"> <br><br>
+
+                            <div class="dual-column">
+                              <label for="School">Start Date:</label>
+                              <input type="text" id="startDate"> 
+                              <label for="School">End Date:</label>
+                              <input type="text" id="completionDate"> 
+                            </div><br>
+
+                            <div class="dual-column">
+                            <label >12th:</label>
+                            <input type="text" id="secondary"> 
+                            <label >Grade:</label>
+                            <input type="text" id="secondaryGrade"> 
+                          </div><br>
+                          <div class="dual-column">
+                            <label >10th:</label>
+                            <input type="text" id="highSchool"> 
+                            <label >Grade:</label>
+                            <input type="text" id="highSchoolGrade"> 
+                          </div>
+                          <br>
+                          <label >Skills:</label>
+                            <textarea type="text" rows="4" cols="50" id="skills">
+                            </textarea>
+                          <br><br>
+                            <button  type="submit">submit</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+
+                </div>
+            </div>
+            <div id="parsedResume"></div>
+            <script src="script.js"></script>
+</body>
+
+</html>
